@@ -1,0 +1,217 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Diet Plan Analysis</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='mstyle.css')}}">
+    <style>
+      body {
+        margin: 0;
+        background-color: #f1f1f1;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      #navbar {
+        background-color: #333;
+        position: fixed;
+        top: -50px;
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+      }
+      
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      </style>
+  </head>
+  <body>
+     
+
+    <nav class="navbar navbar-expand-lg navbar-light "style="background-color:#689F38;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+              <img src="{{url_for('static', filename='logo.png')}}" class="d-inline-block align-top" alt="" width="120" height="120">
+     </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+         
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+          </ul>
+        <ul class="nav ">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="/knowyourfruit"><h5>Know Your Fruit</h5></a>
+          </li>
+          
+        </ul>
+        <ul class="nav ">
+          <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="/facts"><h5>Facts</h5></a>
+        
+          </li>
+          
+        </ul>
+       
+        <ul class="nav ">
+          <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="/dietplan"><h5>Diet-Plan</h5></a>
+        
+          </li>
+          
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+<br><br>
+
+   
+<!--second-->
+<div class="container-fluid ">
+  <div class="row text-center col-md-10 mx-auto ma">
+    <div class="col-md-4 mx-auto im ma">
+      <img src="{{url_for('static', filename='diet.png')}}">
+    </div>
+  <div class="container-fluid ">
+    <div class="row text-center col-md-10 mx-auto ma">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ma" >
+        <h3 class="display-6"> 
+        
+           <div style="padding:15px 15px 2500px;font-size:30px">
+            <p><b>Added Sugar Is a Disaster for your health</b></p>
+            <p>
+          To improve the taste of processed foods, producers often add sugar to them. This type of sugar is known as added sugar.
+          Common types of added sugar include table sugar (sucrose) and syrups, such as high-fructose corn syrup.
+          Everyone knows that eating too much added sugar is unhealthy.
+          While some think sugar is a simple matter of “empty” calories, others believe it increases the risk of diseases that kill millions of people each year.
+          It is definitely true that added sugar contains empty calories. There are no nutrients in it, other than sugar. As a result, basing your diet on products high in added sugar may contribute to nutrient deficiencies.
+          But this is just the tip of the iceberg. There are many other risks associated with excessive sugar intake that are now reaching mainstream attention.
+          Added sugar is being implicated as a leading cause of obesity, heart disease and type 2 diabetes (1Trusted Source).
+           </p>
+          <p><b>Artificial Trans Fats Are Very Unhealthy</b></p>
+          <p>Trans fats form in chemically processed oils and are linked to all sorts of chronic diseases. You should avoid them like the plague.
+          Trans fats are formed as a side product when vegetable oils are hydrogenated.
+          Food producers often use hydrogenation to harden vegetable oils for use in products such as margarine.
+          Because trans fats have been linked with poor health, margarine free of trans fats is becoming increasingly common.
+          A high intake of trans fats is associated with various chronic diseases, such as abdominal obesity, inflammation and heart disease</p>
+          <p><b>Eating Vegetables Will Improve Your Health</b></p>
+          <p>Vegetables are good for you.
+          They are rich in vitamins, minerals, fiber, antioxidants and an endless variety of trace nutrients that science has just begun to uncover.</p>
+          <p><b> It Is Critical to Avoid a Vitamin D Deficiency</p></b>
+          <p>Vitamin D is a unique vitamin that actually functions as a hormone in the body.
+          The skin makes vitamin D when it is exposed to ultraviolet rays from the sun. This is how people got most of their daily requirement throughout evolution.
+          However, a large part of the world is deficient in this critical nutrient today.
+          In many places, the sun simply isn’t available throughout most of the year.
+          Even where there is sun, many people tend to stay inside and use sunscreen when they go out. Sunscreen effectively blocks vitamin D generation in the skin.
+          If you’re deficient in vitamin D, then you’re actually lacking a major hormone in the body. </p>
+          <p><b>Refined Carbohydrates Are Bad for You</b></p>
+          <p>There are a lot of differing opinions about carbs and fat.
+          
+          Some think fat is the root of all evil, while others believe carbs are the key players in obesity and other chronic diseases.
+          But what pretty much everyone agrees on is that refined carbohydrates are not as healthy as unrefined carbohydrates.
+          Unrefined carbs are basically whole foods that are rich in carbs. These include whole-grain cereals, beans, vegetables and fruits. Refined carbs, on the other hand, are sugar and refined flour.
+          Whole foods contain numerous beneficial nutrients and antioxidants.
+          However, when high-carb foods such as grains are processed, the most nutritious parts are stripped off. What is left are massive amounts of easily digestible starch.
+          Those who base their diets on refined carbs may be lacking in fiber and many other healthy nutrients. As a result, they are at an increased risk of chronic disease
+          </p>
+          <p><b>Supplements Can Never Fully Replace Real Foods</p></b>
+          <p>“Nutritionism” is the idea that foods are nothing more than the sum of their individual nutrients.
+          But it’s also a trap that many nutrition enthusiasts tend to fall into.
+          Nuts, for example, aren’t just shells loaded with polyunsaturated fat. In the same way, fruits aren’t just watery bags of sugar.
+          These are real foods with a massive variety of trace nutrients.
+          The vitamins and minerals, the ones you can also get from a cheap multivitamin, are just a small part of the total amount of nutrients in foods.
+          Therefore, supplements cannot match the variety of nutrients you get from real foods.
+          However, many supplements can be beneficial, especially those that contain nutrients that are generally lacking in the diet, like vitamin D.
+          But no amount of supplements will ever make up for a bad diet. Not a chance.</p></b>
+          <p><b>“Diets” Don’t Work — a Lifestyle Change Is Necessary</b></p>
+          <p>“Diets” are ineffective. That is a fact.
+          They may provide short-term results, but as soon as the diet ends and you start eating junk food again, you will gain the weight back. And then some.
+          Adopting a healthy lifestyle is the only way to ensure long-term weight loss and a lifetime of improved health.</p>
+          <marquee direction="right" 
+                  behavior="alternate" 
+                  style="border:BLACK 2px SOLID">
+                  And also do not forget to exercise daily!
+              </marquee>
+          </div>
+        </h3>
+      </div>
+      
+     
+      
+      </div>
+      </div>    
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> 
+      </script>
+      <script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+       <script>
+         $(document).ready(function() {
+           $('.submi').click(function() {
+             var val1 = $('.v1').val();
+            
+             $.ajax({
+              url: "/deepapi",
+              type: "get",
+              data: {dmks: val1},
+              success: function(response) {
+                  $(".whois").html(response.whois);
+                  $(".sd").html(response.subdomains);
+                  $(".dbs").html(response.verbose_msg);
+                  $(".wc").html(response["Webroot category"]);
+                  $(".vc").html(response['Comodo Valkyrie Verdict category']);
+                  
+
+               },
+                error: function(xhr) {
+                //Do Something to handle error
+               }
+              });
+           });
+         });
+       </script>  
+        
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
+
+
+
+
